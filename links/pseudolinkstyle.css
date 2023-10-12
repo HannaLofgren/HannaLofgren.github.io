@@ -22,7 +22,7 @@ a:focus{
 }
 a:hover{
 box-shadow: 5px 5px 5px #888888;
-background-color: pink;
+background-color: rgb(153, 23, 45);
 }
 a:active{
     background-color: #ffeeaa;
