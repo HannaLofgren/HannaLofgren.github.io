@@ -11,10 +11,10 @@ body{
     outline: none;
 }
  a:link{
-        color: yellowgreen;
+        color: white;
 }
 a:visited{
-    color: white;
+    color: black;
 }
 a:focus{
     border-bottom: 1px solid lightblue;
