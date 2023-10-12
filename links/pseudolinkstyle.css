@@ -11,10 +11,10 @@ body{
     outline: none;
 }
  a:link{
-        color: yellowgreen;
+        color: blueviolet;
 }
 a:visited{
-    color: darkgreen;
+    color: pink;
 }
 a:focus{
     border-bottom: 1px solid blue;
@@ -22,7 +22,7 @@ a:focus{
 }
 a:hover{
 box-shadow: 5px 5px 5px #888888;
-background-color: lightgreen;
+background-color: red;
 }
 a:active{
     background-color: #ffeeaa;
