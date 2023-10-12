@@ -9,22 +9,22 @@ body{
     padding: 10px;
     text-decoration: none;
     outline: none;
-    }
-    a:link{
-        color: yellowgreen;
-    }
-    a:hover{
-box-shadow: 5px 5px 5px #888888;
-background-color: lightgreen;
 }
-a:focus{
-    border-bottom: 1px solid blue;
-    background-color: lightblue;
+ a:link{
+        color: yellowgreen;
 }
 a:visited{
     color: darkgreen;
 }
+a:hover{
+box-shadow: 5px 5px 5px #888888;
+background-color: lightgreen;
+}
 a:active{
     background-color: #ffeeaa;
     color: #00ff33;
+}
+a:focus{
+    border-bottom: 1px solid blue;
+    background-color: lightblue;
 }
