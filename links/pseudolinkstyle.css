@@ -14,7 +14,7 @@ body{
         color: yellowgreen;
 }
 a:visited{
-    color: pink;
+    color: black;
 }
 a:focus{
     border-bottom: 1px solid blue;
