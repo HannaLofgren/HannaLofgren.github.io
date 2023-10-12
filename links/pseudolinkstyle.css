@@ -15,14 +15,14 @@ body{
     }
     a:hover{
 box-shadow: 5px 5px 5px #888888;
-background-color: rgb(38, 35, 182);
+background-color: lightgreen;
 }
 a:focus{
-    border-bottom: 1px solid rgb(197, 57, 68);
+    border-bottom: 1px solid blue;
     background-color: lightblue;
 }
 a:visited{
-    color: rgb(209, 142, 102);
+    color: darkgreen;
 }
 a:active{
     background-color: #ffeeaa;
