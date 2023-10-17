@@ -4,15 +4,15 @@
 .a {
     margin: 40px;
     background-color: #8eaf76;
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 150px;
 }
 .b {
     margin: 20px;
     padding: 20px;
     background-color: #65AD31;
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
 }
 .c {
     margin: 30px;
