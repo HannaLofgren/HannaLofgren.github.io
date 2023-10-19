@@ -15,3 +15,17 @@ body{
 .c{
     font-family: 'Dancing Script', cursive;
 }
+
+span{
+    font-weight: bold;
+}
+
+div{
+    width: 300px;
+    height: auto;
+    background-color: #FE8176;
+    background-image: linear-gradient(#FFDEDB, #FE8176);
+    box-shadow: 5px 5px black;
+    padding: 10px;
+    margin: 25px;
+}
