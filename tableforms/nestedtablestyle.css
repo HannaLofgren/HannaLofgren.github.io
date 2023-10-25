@@ -1,3 +1,30 @@
 body{
     background-color: rgb(200, 219, 115);
 }
+thead{
+    color: red;
+}
+tfoot{
+    color: blue;
+}
+table{
+    border: 2px solid blue;
+    border-collapse: collapse;
+    text-align: center
+}
+td,th{
+    border: 1px solid green;
+    padding: 5px 10px;
+}
+purple{
+    color: purple;
+}
+.gborder{
+    border: 1px solid lightgreen;
+}
+.boss{
+    box-shadow: 5px 5px black;
+}
+.yellow{
+    color: yellow;
+}
