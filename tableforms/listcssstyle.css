@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(51, 163, 214);
+}
+.roman{
+    list-style: upper-roman;
+}
+.none{
+    list-style-type: none;
+}
+ol{
+    border: 2px solid blue;
+}
