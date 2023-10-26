@@ -17,7 +17,7 @@ td,th{
     padding: 5px 10px;
 }
 purple{
-    color: purple;
+    color: rgb(124, 7, 124);
 }
 .gborder{
     border: 1px solid lightgreen;
@@ -26,5 +26,5 @@ purple{
     box-shadow: 5px 5px black;
 }
 .yellow{
-    color: yellow;
+    color: rgb(214, 192, 66);
 }
