@@ -10,3 +10,16 @@ body{
 ol{
     border: 2px solid blue;
 }
+ul{
+    list-style-type: square;
+    border: 2px solid blue;
+}
+.boss{
+    border: 2px solid blue;
+    color: purple;
+    background-color: white;
+    list-style-type: none;
+}
+ul, ol, dl{
+    width: 500px;
+}
