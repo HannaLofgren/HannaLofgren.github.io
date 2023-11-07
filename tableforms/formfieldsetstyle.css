@@ -1,0 +1,18 @@
+body{
+    background-color: lightgreen;
+}
+label {
+    display: block;
+    font:
+      1rem 'Fira Sans',
+      sans-serif;
+  }
+  
+legend{
+    background-color: pink;
+    color: purple;
+}
+
+.blue{
+    color: blue;
+}

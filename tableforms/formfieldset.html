@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formfieldset</title>
+    <link rel="stylesheet" href="formfieldsetstyle.css">
 </head>
 <body>
-    
+    <h1>Form with fieldsets</h1>
+    <form>
+        <fieldset>
+          <legend>Login</legend>
+          <label class="blue" for="Username">Username:*
+            <input type="text" name="Username" required>
+        </label><br>
+        <label class="blue" for="Password">Password:*
+            <input type="password" name="Password" required>
+        </label>
 </body>
 </html>
