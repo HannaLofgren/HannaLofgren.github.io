@@ -6,24 +6,25 @@
     <title>Loop</title>
 </head>
 <body>
-    <p>först med for</p>
-    <p id="for"></p>
-    <p>Nu med while</p>
-    <p id="while"></p>
-    <script>
-        let forText = document.getElementById('for');
-        let whileText = document.getElementById('while');
-        const message = 'Hejsan från Haris Drapic. Jag tycker att det är bra tutorial i Javascript! '; 
-    
-        for (let i = 0; i < message.length; i++) {
-            forText.innerText += message[i] + '-' 
-        }
-        let meese = 0;
-        while (meese < message.length) {
-            whileText.innerText += message[i] + '-' 
-            meese++
-        }
+    <h2>Först med for</h2>
+    <div id="for"></div>
+    <h2>Nu med while</h2>
+    <div id="while"></div>
 
+    <script>
+        const forEl = document.getElementById("for")
+        const whileEl = document.getElementById("while")
+        const msg = "hej mitt namn är linus och jag heter linus"
+
+        for (let i = 0; i < msg.length; i++) {
+            forEl.innerText += msg[i] + "-"
+        }
+        let n = 0
+        while (n < msg.length) {
+            whileEl.innerText += msg[n] + "-"
+            n++            
+        }
     </script>
 </body>
+
 </html>
