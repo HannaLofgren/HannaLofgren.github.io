@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <h1>Datumobjekt</h1>
+
+  <script>
+    // Skapa ett datumobjekt för dagens datum
+    var idag = new Date();
+
+    // Skapa ett datumobjekt för 30 augusti 2014
+    var augusti30_2014 = new Date(2014, 7, 30); // Månader räknas från 0, så 7 representerar augusti
+
+    // Visa resultaten i konsolen för att verifiera
+    console.log("Dagens datum: ", idag.toDateString());
+    console.log("30 augusti 2014: ", augusti30_2014.toDateString());
+  </script>
+</body>
+</html>
