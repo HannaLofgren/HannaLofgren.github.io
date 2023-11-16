@@ -10,6 +10,16 @@
     <script>
 
         var idag = new Date();
+
+    var minuter = idag.getMinutes();
+    var timmar = idag.getHours();
+    var sekunder = idag.getSeconds();
+    var år = idag.getFullYear();
+
+    console.log("Minuter: " + minuter);
+    console.log("Timmar: " + timmar);
+    console.log("Sekunder: " + sekunder);
+    console.log("År: " + år);
     
         var augusti30_2014 = new Date(Date.parse("Aug 30, 2014"));
     
