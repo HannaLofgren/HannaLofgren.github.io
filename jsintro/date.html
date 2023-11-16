@@ -7,17 +7,35 @@
 </head>
 <body>
     <h1>Datumobjekt</h1>
-
-  <script>
-    // Skapa ett datumobjekt för dagens datum
-    var idag = new Date();
-
-    // Skapa ett datumobjekt för 30 augusti 2014
-    var augusti30_2014 = new Date(2014, 7, 30); // Månader räknas från 0, så 7 representerar augusti
-
-    // Visa resultaten i konsolen för att verifiera
-    console.log("Dagens datum: ", idag.toDateString());
-    console.log("30 augusti 2014: ", augusti30_2014.toDateString());
-  </script>
+    
+    <script>
+        // Skapa ett datumobjekt för dagens datum
+        var idag = new Date();
+    
+        // Skapa ett datumobjekt för 30 augusti 2014 med Date.parse
+        var augusti30_2014 = new Date(Date.parse("Aug 30, 2014"));
+    
+        // Skriv ut det andra datumet
+        document.write("<p>Andra datumet: " + augusti30_2014.toDateString() + "</p>");
+    
+        // Extrahera minuter, sekunder, år, timmar från datumobjekt
+        var minuter = augusti30_2014.getMinutes();
+        var sekunder = augusti30_2014.getSeconds();
+        var år = augusti30_2014.getFullYear();
+        var timmar = augusti30_2014.getHours();
+    
+        // Skriv ut resultaten
+        document.write("<p>Minuter: " + minuter + "</p>");
+        document.write("<p>Sekunder: " + sekunder + "</p>");
+        document.write("<p>År: " + år + "</p>");
+        document.write("<p>Timmar: " + timmar + "</p>");
+    
+        // Beräkna antalet dagar till nytt år
+        var årsslut = new Date("December 31," + idag.getFullYear());
+        var dagarTillNyttÅr = Math.floor((årsslut - idag) / (1000 * 60 * 60 * 24));
+    
+        // Skriv ut antalet dagar till nytt år
+        document.write("<p>Antal dagar till nytt år: " + dagarTillNyttÅr + "</p>");
+      </script>
 </body>
 </html>
