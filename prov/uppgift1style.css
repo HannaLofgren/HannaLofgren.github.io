@@ -2,7 +2,7 @@ body{
     background-color: rgb(210, 241, 138);
 }
 table{
-    box-shadow: 5px 5px black;
+    box-shadow: 5px 10px black;
     border: 2px solid blue;
     border-collapse: collapse;
     text-align: center;
