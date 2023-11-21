@@ -22,3 +22,19 @@ th, td{
     padding: 20px 40px;
 
 }
+
+label {
+    display: block;
+    font:
+      1rem 'Fira Sans',
+      sans-serif;
+  }
+
+legend{
+    background-color: rgb(217, 255, 192);
+    color: rgb(0, 23, 128);
+}
+
+.blue{
+    color: blue;
+}

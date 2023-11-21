@@ -64,13 +64,60 @@
                 </tr>
             <tfoot>
                 <tr>
-                    <th colspan="3">Total 6 drivers</th>
-                    <td colspan="2">Total:1649</td>
+                    <th colspan="4">Total 6 drivers</th>
+                    <th>Total:1649</th>
                 </tr>
             </tfoot>
             </tbody>
     </table>
 
-    
+    <form>
+        <fieldset>
+              <legend>Name of driver</legend>
+              <label class="blue" for="Username">Username:*
+                <input type="text" name="Username" required>
+            </label><br>
+            <label class="blue" for="Password">Password:*
+                <input type="password" name="Password" required>
+            </label>
+        </fieldset>
+            <fieldset>
+                <legend>Gender*</legend>
+                <label class="blue" for="Male">Male
+                    <input type="radio" name="gender"><br>
+                </label>
+                <label class="blue" for="Female">Female
+                        <input type="radio" name="gender"><br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Programming skill</legend>
+                <label class="blue" for="Java">Java
+                    <input type="checkbox" value="Java"><br>
+                </label>
+                <label class="blue" for="C++">C++
+                    <input type="checkbox" value="Java">
+                </label>
+                <label class="blue" for="C#">C#
+                    <input type="checkbox" value="Java">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Fruit</legend>
+                <label for="fruit">Choose a fruit:
+                <select name="fruit">
+                    <option value="Banana">Banana</option>
+                    <option value="Mango">Mango</option>
+                    <option value="Kiwi">Kiwi</option>
+                    <option value="Apple">Apple</option>
+                </select>
+            </label>
+            </fieldset>
+            <fieldset>
+                <legend>Comment</legend>
+                <textarea name="message" cols="30" rows="5">Enter yor comment here</textarea>
+            </fieldset>
+            <input type="submit" value="Send">
+        </form>
 </body>
 </html>
