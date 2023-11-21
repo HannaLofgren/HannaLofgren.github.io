@@ -3,13 +3,13 @@ body{
 }
 table, form{
 float: left;
-margin: 52px;
+margin: 55px;
 }
 table{
     border: 2px solid blue;
     border-collapse: collapse;
     text-align: center;
-    width: 498px;
+    width: 505px;
 }
 
 thead{
