@@ -16,3 +16,15 @@ legend{
 .blue{
     color: blue;
 }
+
+spara
+
+table, form{
+    box-shadow: 5px 10px black;
+    border: 2px solid blue;
+    border-collapse: collapse;
+    text-align: center;
+    float: left;
+    margin: 50px;
+    width: 500px;
+}

@@ -2,12 +2,13 @@ body{
     background-color: rgb(210, 241, 138);
 }
 table, form{
-    box-shadow: 5px 10px black;
+float: left;
+margin: 50px;
+}
+table{
     border: 2px solid blue;
     border-collapse: collapse;
     text-align: center;
-    float: left;
-    margin: 50px;
     width: 500px;
 }
 
