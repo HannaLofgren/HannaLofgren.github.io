@@ -5,7 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbasiswraporder</title>
     <style>
-        
+         body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .wrapper{
+        display: flex;
+      flex-wrap: wrap;
+    }
+    .header, .footer {
+      flex-basis: 100%;
+      background-color: red;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .main {
+      flex-basis: 0;
+      flex-grow: 3;
+      order: 2;
+      background-color: lightblue;
+      text-align: center;
+    }
+
+    .aside {
+      flex-basis: 0;
+      flex-grow: 1;
+      background-color: #d3d3d3;
+      text-align: center;
+    
+    }
+
+    .aside-1 {
+      order: 1;
+      background-color: yellow;
+    }
+
+    .aside-2 {
+      order: 3;
+      background-color: pink;
+    }
+
+    .footer {
+      order: 4;
+      background-color: lightgreen;
+    }
     </style>
 </head>
 <body>
