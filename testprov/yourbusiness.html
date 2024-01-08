@@ -15,5 +15,82 @@
                     <li><a>HOME</a></li>
                 </ul>
             </div>
+            <div class="e">
+                <ul>
+                    <li><a>ABOUT</a></li>
+                    <li><a>SERVICES</a></li>
+                    <li><a>CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <img id="colorchanger" src="pic1.jpg" alt="lampa">
+            <div class="text">
+                <h1>Your Business On the Web</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <ion-icon class="icon" name="bar-chart-outline" style="color: blue;"></ion-icon>
+                <h1>Analytics</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+            </div>
+            <div>
+                <ion-icon class="icon" name="megaphone-outline"></ion-icon>
+                <h1>Marketing</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+            </div>
+            <div>
+                <ion-icon class="icon" name="layers-outline" style="color: red;"></ion-icon>
+                <h1>Development</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+            </div>
+            <div>
+                <ion-icon class="icon" name="people-outline" style="color: rgb(104, 255, 104);"></ion-icon>
+                <h1>Support</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+            </div>
+        </div>
+        <div class="forms">
+            <form>
+                <fieldset>
+                    <legend>Gender*</legend>
+                    <label for="male">Male
+                        <input type="radio" name="gender"><br>
+                    </label>
+                    <label for="female">Female
+                        <input type="radio" name="gender">
+                    </label>
+                </fieldset>
+            </form>
+            <form class="forms test">
+                <fieldset>
+                    <legend>Programming Skill</legend>
+                    <label>Java
+                        <input type="checkbox" value="Java"><br>
+                    </label>
+                    <label>C++
+                        <input type="checkbox" value="C++"><br>
+                    </label>
+                    <label>C#
+                        <input type="checkbox" value="C#">
+                    </label>
+                </fieldset>
+                <input type="submit" class="send" value="Send">
+            </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('colorchanger').addEventListener('click', function() {
+                console.log("Image clicked!");
+                document.querySelector('.r').style.backgroundColor = '#00ffff';
+                document.querySelector('.e').style.backgroundColor = '#ffff00';
+            });
+        });
+    </script>
 </body>
 </html>
