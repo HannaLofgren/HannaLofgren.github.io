@@ -1,6 +1,9 @@
 body{
     background-color:  rgb(34, 85, 143);
+    margin: 30px 60px;
+    line-height: 1.4;
 }
+
 @media (max-width: 1100px) {
     .main_nav {
       flex-direction: column;
