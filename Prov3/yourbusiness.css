@@ -1,0 +1,45 @@
+body{
+  background-color: rgb(34,255,153);
+}
+
+
+@media (max-width: 1200px) {
+    .main_nav {
+      flex-direction: column;
+    }
+  
+    .navholder-left {
+      width: initial;
+    }
+  
+    .navholder-right {
+      width: initial;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    body {
+      margin: 20px;
+    }
+  
+    .showcase h1 {
+      font-size: 2rem;
+    }
+  
+    .center-container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .imgholder {
+      display: none;
+    }
+    #cc1 {
+      order: 2;
+    }
+    #cc2 {
+      order: 1;
+    }
+  }
