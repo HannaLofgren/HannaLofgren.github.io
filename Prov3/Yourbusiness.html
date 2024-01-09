@@ -7,6 +7,215 @@
     <link rel="stylesheet" href="yourbusiness.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Your business</title>
+    <style>
+        body{
+    background-color: rgb(34,255,153);
+    margin: 30px 60px;
+    line-height: 1.4;
+  }
+  html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+  }
+  :root {
+      --primary: #ddd;
+      --dark: #333;
+      --light: #fff;
+      --shadow: 0 1px 5px rgba(87, 86, 86, 0.8);
+    }
+  .everything{
+    flex-direction: column;
+    display: flex;
+  }
+  .btn {
+    background: #333;
+    color: #fff;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 25px;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between; 
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .s{
+    flex: 1; 
+    margin-right: 5%;
+  }
+  
+  .e{
+    flex: 3;
+    margin-left: 5%;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around; 
+    padding: 0; 
+  }
+  
+  .body{
+  display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding: 0;
+    box-shadow: 5px 5px rgb(8, 59, 189);
+    background-color: rgb(221, 221, 221);
+  
+  }
+  
+  li {
+      margin: 10px;
+    padding: 15px;
+    flex: 1; 
+    background-color: rgb(221, 221, 221);
+    box-shadow: 6px 6px rgb(212, 50, 114);
+   
+  }
+  
+  
+  .t{
+    margin-left: 20%;
+  }
+  .yellow {
+      background-color: yellow;
+  }
+  button{
+    color: white;
+    background-color: rgb(22, 21, 21);
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  .footer{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .footer > div{
+    background-color: rgb(221, 221, 221);
+    box-shadow: 6px 6px red;
+    padding: 15px;
+    margin: 5px;
+    flex: 1 20%;
+    text-align: center;
+  }
+  button:hover {
+      background-color: yellow;
+  }
+  .footer > div:hover {
+      background-color: yellow;
+  }
+  .icon{
+    font-size: 2rem;
+  }
+  
+  .forms{
+    display: flex;
+    align-self: center;
+  }
+  
+  legend{
+    background-color: rgb(166, 238, 178);
+    color: rgb(129, 13, 224);
+  }
+  label{
+    padding: 20px;
+  }
+  fieldset > input{
+    padding: 20px;
+    margin: 10px;
+  }
+  form{
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(0, 0, 255);
+    box-shadow: 5px 5px rgb(0, 143, 71);
+  }
+  fieldset{
+    padding: 10px;
+    border: 1px solid grey;
+  }
+  
+  .test{
+    flex-direction: column;
+  }
+  .send{
+    width: 40px;
+    align-self: center;
+  }
+  @media screen and (max-width: 750px) {
+      .body, .forms {
+          display: none;
+      }
+  
+      .e {
+          order: 1;
+          margin: 0;
+          margin-bottom: -10px;
+      }
+  
+      .s {
+          order: 2;
+          margin: -10px;
+          margin-bottom: -30px;
+      }
+  
+      .title, ul {
+          flex-direction: column;
+      }
+  
+      li {
+          flex: 100%;
+      }
+      .footer {
+          flex-wrap: wrap;
+          background-color: yellow;
+      }
+  }
+  
+  @media screen and (max-width: 1200px) and (min-width: 550px) {
+      .forms {
+          display: none;
+      }
+  
+      .title, ul, .e, .s {
+          margin: 0;
+      }
+  
+      .e {
+          margin-bottom: -10px;
+      }
+  
+      .s {
+          margin-bottom: -32px;
+      }
+  
+      li {
+          flex: 100%;
+      }
+  
+      .body {
+          flex-direction: row-reverse;
+      }
+  
+      .t {
+          margin: 2%;
+      }
+  }
+  
+    </style>
 </head>
 <body>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -22,7 +231,6 @@
             });
         });
     </script>
-    
     <div class="everything">
         <div class="title">
             <div class="r">
