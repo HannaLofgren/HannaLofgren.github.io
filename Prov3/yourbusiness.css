@@ -135,7 +135,67 @@ fieldset{
   width: 40px;
   align-self: center;
 }
+@media screen and (max-width: 750px) {
+    .body, .forms {
+        display: none;
+    }
 
+    .e {
+        order: 1;
+        margin: 0;
+        margin-bottom: -10px;
+    }
+
+    .s {
+        order: 2;
+        margin: -10px;
+        margin-bottom: -30px;
+    }
+
+    .title, ul {
+        flex-direction: column;
+    }
+
+    li {
+        flex: 100%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 550px) {
+    .forms {
+        display: none;
+    }
+
+    .title, ul, .e, .s {
+        margin: 0;
+    }
+
+    .e {
+        margin-bottom: -10px;
+    }
+
+    .s {
+        margin-bottom: -32px;
+    }
+
+    li {
+        flex: 100%;
+    }
+
+    .body {
+        flex-direction: row-reverse;
+    }
+
+    .text {
+        margin: 2%;
+    }
+}
+
+/*
 @media screen and (max-width: 750px) {
     .body, .forms{
         display: none;
