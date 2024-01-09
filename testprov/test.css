@@ -1,0 +1,184 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(34, 86, 153);
+}
+.all{
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    text-align: center;
+    padding: 10px;
+}
+
+.r{
+    flex: 1; 
+    margin-right: 5%;
+}
+
+.e{
+    flex: 3;
+    margin-left: 5%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around; 
+    padding: 0; 
+}
+
+li {
+    background-color: rgb(221, 221, 221);
+    box-shadow: 4px 4px rgb(7, 221, 114);
+    margin: 10px;
+    padding: 15px;
+    flex: 1; 
+}
+
+.body{
+    box-shadow: 4px 4px rgb(7, 177, 31);
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding: 0;
+}
+
+.text{
+    margin-left: 20%;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.footer{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+.footer > div{
+    background-color: rgb(221, 221, 221);
+    box-shadow: 3px 3px red;
+    padding: 15px;
+    margin: 5px;
+    flex: 1 20%;
+    text-align: center;
+}
+
+.icon{
+    font-size: 2rem;
+}
+
+.forms{
+    display: flex;
+    align-self: center;
+}
+
+form{
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(0, 0, 255);
+    box-shadow: 3px 3px rgb(0, 143, 71);
+}
+fieldset{
+    padding: 10px;
+    border: 1px solid grey;
+}
+legend{
+    background-color: rgb(166, 238, 178);
+    color: rgb(129, 13, 224);
+}
+label{
+    padding: 20px;
+}
+fieldset > input{
+    padding: 20px;
+    margin: 10px;
+}
+
+.test{
+    flex-direction: column;
+}
+.send{
+    width: 40px;
+    align-self: center;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 750px) {
+    .forms{
+        display: none;
+    }
+    .header{
+        flex-direction: column;   
+    }
+    ul{
+        flex-direction: column;
+    }
+    .e, .r{
+        margin: 0;
+    }
+    .e{
+        margin-bottom: -10px;
+    }
+    .r{
+        margin-bottom: -32px;
+    }
+    li{
+        flex: 100%;
+    }
+    .body{
+        flex-direction: row-reverse;
+    }
+    .text{
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .body, .forms{
+        display: none;
+    }
+    .e{
+        order: 1;
+    }
+    .r{
+        order: 2;
+        margin: -10px;
+    }
+    .header{
+        flex-direction: column;   
+    }
+    ul{
+        flex-direction: column;
+    }
+    .e, .r{
+        margin: 0;
+    }
+    .e{
+        margin-bottom: -10px;
+    }
+    .r{
+        margin-bottom: -30px;
+    }
+    li{
+        flex: 100%;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+}
