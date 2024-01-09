@@ -101,12 +101,6 @@
   
   .imgholder {
     flex: 1;
-    box-shadow: 4px 4px rgb(7, 177, 31);
-    background-color: rgb(221, 221, 221);
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
-    padding: 0;
   }
   
   img {
@@ -116,12 +110,14 @@
   
   .side_container {
     flex: 1;
-    margin: 0.5rem 1rem;
-    padding: 1.5rem;
     display: flex;
-    flex-direction: column;
     align-items: start;
     justify-content: start;
+    box-shadow: 4px 4px rgb(7, 177, 31);
+    background-color: rgb(221, 221, 221);
+    flex-direction: row;
+    margin: 15px;
+    padding: 0;
   }
   
   .side_container h1 {
