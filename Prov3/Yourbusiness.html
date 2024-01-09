@@ -255,32 +255,43 @@ fieldset > input{
             </div>
         </div>
         <div class="forms">
-            <form>
+            <form class="forms test">
                 <fieldset>
-                    <legend>Your name:</legend>
-                    <label for="male">Male
-                        <input type="radio" name="gender"><br>
-                    </label>
-                    <label for="female">Female
-                        <input type="radio" name="gender">
-                    </label>
+                    <legend>Your Name</legend>
+                    <label class="blue" for="firstname">First name:*
+                      <input class="yellow" type="text" name="firstname" required>
+                  </label><br>
+                  <label class="blue" for="lastname">Last name:*
+                      <input class="yellow" type="text" name="lastname" required>
+                  </label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Nationality</legend>
+                    <label for="nation">Choose a nationality:</label>
+                    <select name="nation">
+                        <option value="Ned">Ned</option>
+                        <option value="Swe">Swe</option>
+                        <option value="USA">USA</option>
+                        <option value="GBR">GBR</option>
+                    </select>
                 </fieldset>
             </form>
             <form class="forms test">
                 <fieldset>
-                    <legend>Programming Skill</legend>
-                    <label>Java
+                    <legend>Skills</legend>
+                    <label>Electrician
                         <input type="checkbox" value="Java"><br>
                     </label>
-                    <label>C++
+                    <label>Baker
                         <input type="checkbox" value="C++"><br>
                     </label>
-                    <label>C#
+                    <label>Carpenter
                         <input type="checkbox" value="C#">
                     </label>
                 </fieldset>
                 <input type="submit" class="send" value="Send">
             </form>
+        </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
