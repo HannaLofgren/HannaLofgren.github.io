@@ -65,7 +65,11 @@
     display: flex;
     margin-bottom: 1.5rem;
     justify-content: space-between;
-  }
+    text-align: center;
+    padding: 10px;
+    flex: 1; 
+    margin-right: 5%;
+}
   
   .navholder-left {
     width: 20%;
