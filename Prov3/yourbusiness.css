@@ -1,4 +1,4 @@
-body{
+      body{
   background-color: rgb(34,255,153);
   margin: 30px 60px;
   line-height: 1.4;
@@ -8,21 +8,15 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
 }
-.all{
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(87, 86, 86, 0.8);
+  }
+.everything{
   flex-direction: column;
   display: flex;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between; 
-  text-align: center;
-  padding: 10px;
-}
-
-.r{
-  flex: 1; 
-  margin-right: 5%;
 }
 .btn {
   background: #333;
@@ -32,10 +26,21 @@ html {
   border: 0;
   border-radius: 25px;
 }
+.title {
+  display: flex;
+  justify-content: space-between; 
+  text-align: center;
+  padding: 10px;
+}
+
+.s{
+  flex: 1; 
+  margin-right: 4.5%;
+}
 
 .e{
   flex: 3;
-  margin-left: 5%;
+  margin-left: 5.5%;
 }
 
 ul {
@@ -100,17 +105,6 @@ button{
   align-self: center;
 }
 
-form{
-  background-color: lightgrey;
-  padding: 20px;
-  margin: 10px;
-  color: rgb(0, 0, 255);
-  box-shadow: 3px 3px rgb(0, 143, 71);
-}
-fieldset{
-  padding: 10px;
-  border: 1px solid grey;
-}
 legend{
   background-color: rgb(166, 238, 178);
   color: rgb(129, 13, 224);
@@ -122,6 +116,17 @@ fieldset > input{
   padding: 20px;
   margin: 10px;
 }
+form{
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 10px;
+  color: rgb(0, 0, 255);
+  box-shadow: 3px 3px rgb(0, 143, 71);
+}
+fieldset{
+  padding: 10px;
+  border: 1px solid grey;
+}
 
 .test{
   flex-direction: column;
@@ -131,24 +136,56 @@ fieldset > input{
   align-self: center;
 }
 
-
-@media screen and (max-width: 1100px) and (min-width: 750px) {
-    .forms{
+@media screen and (max-width: 750px) {
+    .body, .forms{
         display: none;
     }
-    .header{
+    .e{
+        order: 1;
+    }
+    .s{
+        order: 2;
+        margin: -10px;
+    }
+    .title{
         flex-direction: column;   
     }
     ul{
         flex-direction: column;
     }
-    .e, .r{
+    .e, s{
         margin: 0;
     }
     .e{
         margin-bottom: -10px;
     }
-    .r{
+    .s{
+        margin-bottom: -30px;
+    }
+    li{
+        flex: 100%;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 550px) {
+    .forms{
+        display: none;
+    }
+    .title{
+        flex-direction: column;   
+    }
+    ul{
+        flex-direction: column;
+    }
+    .e, .s{
+        margin: 0;
+    }
+    .e{
+        margin-bottom: -10px;
+    }
+    .s{
         margin-bottom: -32px;
     }
     li{
@@ -161,78 +198,3 @@ fieldset > input{
         margin: 2%;
     }
 }
-
-@media screen and (max-width: 750px) {
-    .body, .forms{
-        display: none;
-    }
-    .e{
-        order: 1;
-    }
-    .r{
-        order: 2;
-        margin: -10px;
-    }
-    .header{
-        flex-direction: column;   
-    }
-    ul{
-        flex-direction: column;
-    }
-    .e, .r{
-        margin: 0;
-    }
-    .e{
-        margin-bottom: -10px;
-    }
-    .r{
-        margin-bottom: -30px;
-    }
-    li{
-        flex: 100%;
-    }
-    .footer{
-        flex-wrap: wrap;
-    }
-}
-
- /*@media (max-width: 1200px) {
-    .main_nav {
-      flex-direction: column;
-    }
-  
-    .navholder-left {
-      width: initial;
-    }
-  
-    .navholder-right {
-      width: initial;
-      flex-direction: column;
-    }
-  }
-  
-  @media (max-width: 700px) {
-    body {
-      margin: 20px;
-    }
-  
-    .showcase h1 {
-      font-size: 2rem;
-    }
-  
-    .center-container {
-      flex-direction: column;
-    }
-  }
-  
-  @media (max-width: 550px) {
-    .imgholder {
-      display: none;
-    }
-    #cc1 {
-      order: 2;
-    }
-    #cc2 {
-      order: 1;
-    }
-  }
