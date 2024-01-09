@@ -144,19 +144,20 @@
   }
   
   /* Available company services */
+
   .boxes {
     display: flex;
     flex-wrap: wrap;
-  }
+  }                 
   
   .box {
+    flex: 1;
     min-width: 150px;
-    margin: 1rem;
-    background-color: rgb(221, 221, 221);
-    box-shadow: 3px 3px red;
-    padding: 15px;
-    flex: 1 20%;
+    background-color: #ddd;
     text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   }
   
   .box p {
