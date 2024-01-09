@@ -189,6 +189,43 @@
   .center-box h3 {
     margin-top: 0rem;
   }
+
+  .forms{
+    display: flex;
+    align-self: center;
+}
+
+form{
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(0, 0, 255);
+    box-shadow: 3px 3px rgb(0, 143, 71);
+}
+fieldset{
+    padding: 10px;
+    border: 1px solid grey;
+}
+legend{
+    background-color: rgb(166, 238, 178);
+    color: rgb(129, 13, 224);
+}
+label{
+    padding: 20px;
+}
+fieldset > input{
+    padding: 20px;
+    margin: 10px;
+}
+
+.test{
+    flex-direction: column;
+}
+.send{
+    width: 40px;
+    align-self: center;
+}
+
   
   /* Media querys 800-600-500*/
   @media (max-width: 800px) {
