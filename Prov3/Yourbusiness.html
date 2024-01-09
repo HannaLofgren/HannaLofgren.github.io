@@ -80,7 +80,9 @@ li {
 .text{
   margin-left: 20%;
 }
-
+.yellow {
+    background-color: yellow;
+}
 button{
   color: white;
   background-color: rgb(22, 21, 21);
@@ -210,7 +212,18 @@ fieldset{
 <body>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const colorChanger = document.getElementById('colorchanger');
+    
+            colorChanger.addEventListener('click', () => {
+                document.querySelector('.colorTwo').style.backgroundColor = '#add8e6';
+                document.querySelector('.colorOne').style.backgroundColor = '#90ee90';
+                document.getElementById("addText").textContent = "Read Enough";
+            });
+        });
+    </script>
+    
     <div class="everything">
         <div class="title">
             <div class="r">
@@ -235,6 +248,8 @@ fieldset{
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
+    </div>
+    
         <div class="footer">
             <div>
                 <ion-icon name="invert-mode-outline" class="size" style="color: yellow;"></ion-icon>
